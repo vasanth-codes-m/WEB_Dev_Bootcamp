@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalized Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/gridstack@7.2.3/dist/gridstack-all.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/gridstack@7.2.3/dist/gridstack.min.css" rel="stylesheet"/>
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js'></script>
+</head>
+<body>
+    <header>
+        <h1>My Dashboard</h1>
+        <button id="darkModeToggle">Toggle Dark Mode</button>
+    </header>
+    <main class="grid-stack">
+        <div class="grid-stack-item" gs-w="4" gs-h="2">
+            <div class="grid-stack-item-content" id="weatherWidget">
+                <h2>Weather</h2>
+                <div id="weatherContent"></div>
+            </div>
+        </div>
+        <div class="grid-stack-item" gs-w="4" gs-h="4">
+            <div class="grid-stack-item-content" id="newsWidget">
+                <h2>News</h2>
+                <div id="newsContent"></div>
+            </div>
+        </div>
+        <div class="grid-stack-item" gs-w="4" gs-h="3">
+            <div class="grid-stack-item-content" id="tasksWidget">
+                <h2>Tasks</h2>
+                <div id="tasksContent"></div>
+            </div>
+        </div>
+        <div class="grid-stack-item" gs-w="8" gs-h="6">
+            <div class="grid-stack-item-content" id="calendarWidget">
+                <h2>Calendar</h2>
+                <div id="calendarContent"></div>
+            </div>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
+
